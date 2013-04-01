@@ -1,0 +1,45 @@
+.contenedor {
+	width: 960px;
+	margin: 0 auto;
+}
+/*SECCION 1*/
+#seccion1 header {
+	height: 140px;
+}
+#seccion1 header #col1 {
+	float: left;
+	margin-left: 40px;
+	margin-top: 20px;
+	width: 234px;
+}
+#seccion1 header #col2 {
+	float: left;
+	line-height: 22px;
+	margin-left: 30px;
+	margin-top: 27px;
+	width: 510px;
+}
+#seccion1 header #col2 ul.menu li a {
+	color: #525252;
+	text-decoration: none;
+	font-size: 12px;
+}
+#seccion1 header #col3 {
+	float: left;
+	margin-top: 4px;
+	width: 146px;
+}
+#seccion1 header #col3 ul.menu_topright li {
+	float: left;
+}
+#seccion1 header #col3 ul.menu_topright li.separador_menu_top {
+	font-size: 10px;
+	margin-left: 6px;
+	margin-right: 5px;
+	margin-top: 4px;
+}
+#seccion1 header #col3 ul.menu_topright li a {
+	color: #525252;
+	text-decoration: none;
+	font-size: 10px;
+}
