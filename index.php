@@ -49,7 +49,11 @@
 	</div>
 </div>
 <div id="seccion2">
-	<div class="contenedor"></div>
+	<div class="contenedor">
+		<div class="col1">
+			<img src="images/home/relleno-ring.jpg" alt="relleno" />
+		</div>
+	</div>
 </div>
 <div id="seccion3">
 	<div class="contenedor"></div>
