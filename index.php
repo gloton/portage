@@ -11,7 +11,7 @@
 	<script src="js/fonts/DIN_400-DIN_Alternate_700.font.js" type="text/javascript"></script>
 	<script src="js/fonts/DIN_Alternate_Medium_500.font.js" type="text/javascript"></script>
 	<script type="text/javascript">
-		Cufon.replace(".menu, .menu_topright",{fontFamily:"DIN Alternate Light"});
+		Cufon.replace(".menu, .menu_topright, #seccion4",{fontFamily:"DIN Alternate Light"});
 		Cufon.replace(".boxarticulo p",{fontFamily:"DIN"});
 		Cufon.replace(".boxarticulo h5",{fontFamily:"DIN Alternate","font-weight":700});
 	</script>
@@ -89,7 +89,19 @@
 	</div>
 </div>
 <div id="seccion4">
-	<div class="contenedor"></div>
+	<div class="contenedor">
+		<footer>
+			<div class="col1">
+				<p>© 2013 Portage Technologies Inc.</p>
+			</div>
+			<div class="col2">
+				<ul id="menu_footer">
+					<li><a href="">Términos y Condiciones</a></li>
+					<li><a href="">Mapa del Sitio</a></li>
+				</ul>	
+			</div>
+		</footer>
+	</div>
 </div>
 	
 </body>

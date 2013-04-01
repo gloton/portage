@@ -109,3 +109,30 @@
 #seccion3 .contenedor #contenido > .col2 ul.menu_rightbelow li#item_foro {
 	background: url("../images/home/menu_icono_foro.png") no-repeat 1px 1px transparent;
 }
+
+/*SECCION 4*/
+#seccion4 .contenedor {
+	height: 32px;
+	background-color: #929292;
+	color: #FFFFFF;
+}
+#seccion4 .contenedor footer {
+	line-height: 28px;
+}
+#seccion4 .contenedor footer .col1 {
+	float: left;
+	padding-left: 42px;
+	width: 438px;
+}
+#seccion4 .contenedor footer .col2 {
+	float: left;
+	padding-left: 108px;
+	width: 362px;
+}
+#seccion4 .contenedor footer .col2 ul#menu_footer li {
+	float: left;
+	padding-left: 20px;
+}
+#seccion4 .contenedor footer .col2 ul#menu_footer li a {
+	color: #FFFFFF;
+}
