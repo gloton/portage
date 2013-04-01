@@ -6,40 +6,106 @@
 #seccion1 header {
 	height: 140px;
 }
-#seccion1 header #col1 {
+#seccion1 header .col1 {
 	float: left;
 	margin-left: 40px;
 	margin-top: 20px;
 	width: 234px;
 }
-#seccion1 header #col2 {
+#seccion1 header .col2 {
 	float: left;
 	line-height: 22px;
 	margin-left: 30px;
 	margin-top: 27px;
 	width: 510px;
 }
-#seccion1 header #col2 ul.menu li a {
+#seccion1 header .col2 ul.menu li a {
 	color: #525252;
-	text-decoration: none;
 	font-size: 12px;
 }
-#seccion1 header #col3 {
+#seccion1 header .col3 {
 	float: left;
 	margin-top: 4px;
 	width: 146px;
 }
-#seccion1 header #col3 ul.menu_topright li {
+#seccion1 header .col3 ul.menu_topright li {
 	float: left;
 }
-#seccion1 header #col3 ul.menu_topright li.separador_menu_top {
+#seccion1 header .col3 ul.menu_topright li.separador_menu_top {
 	font-size: 10px;
 	margin-left: 6px;
 	margin-right: 5px;
 	margin-top: 4px;
 }
-#seccion1 header #col3 ul.menu_topright li a {
+#seccion1 header .col3 ul.menu_topright li a {
 	color: #525252;
-	text-decoration: none;
 	font-size: 10px;
+}
+
+/*SECCION 3*/
+#seccion3 .contenedor #contenido {
+	height: 160px;
+	background-color: #EFEFEF;
+}
+#seccion3 .contenedor #contenido > .col1 {
+	width: 590px;
+	float: left;
+}
+#seccion3 .contenedor #contenido > .col1 .boxarticulo {
+	border-right: 1px solid #8C8C8C;
+	height: 93px;
+	margin-left: 120px;
+	margin-top: 34px;
+	color: #656565;
+}
+#seccion3 .contenedor #contenido .col1 .boxarticulo > .col1 {
+	width: 190px;
+	float: left;
+}
+#seccion3 .contenedor #contenido .col1 .boxarticulo h5 {
+	font-size: 14px;
+	font-weight: bold;
+}
+#seccion3 .contenedor #contenido .col1 .boxarticulo > .col1 p {
+	font-size: 14px;
+	width: 180px;
+}
+#seccion3 .contenedor #contenido .col1 .boxarticulo > .col2 p {
+	margin-right: 17px;
+	text-align: right;
+}
+#seccion3 .contenedor #contenido .col1 .boxarticulo > .col2 {
+	width: 160px;
+	float: left;
+}
+#seccion3 .contenedor #contenido .col1 .boxarticulo > .col2 img {
+	margin-left: 10px;
+}
+#seccion3 .contenedor #contenido .col1 .boxarticulo > .col2 a {
+	font-size: 10px;
+}
+#seccion3 .contenedor #contenido > .col2 {
+	width: 370px;
+	float: left;
+}
+#seccion3 .contenedor #contenido > .col2 ul.menu_rightbelow {
+	margin-left: 120px;
+	margin-top: 25px;
+	width: 250px;
+}
+#seccion3 .contenedor #contenido > .col2 ul.menu_rightbelow a {
+	font-size: 16px;
+	font-weight: bold;
+	color: #F8733E;
+}
+#seccion3 .contenedor #contenido > .col2 ul.menu_rightbelow li {
+	height: 54px;
+	line-height: 36px;
+	padding-left: 56px;
+}
+#seccion3 .contenedor #contenido > .col2 ul.menu_rightbelow li#item_soporte {
+	background: url("../images/home/menu_icono_soporte.png") no-repeat 1px 1px transparent;
+}
+#seccion3 .contenedor #contenido > .col2 ul.menu_rightbelow li#item_foro {
+	background: url("../images/home/menu_icono_foro.png") no-repeat 1px 1px transparent;
 }
