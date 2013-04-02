@@ -55,7 +55,33 @@
 <div id="seccion2">
 	<div class="contenedor">
 		<div class="col1">
+			<div id="item1_ring" class="vFlotante">
+				<hgroup>
+					<h1 class="titulo">Abrir</h1>
+				</hgroup>
+				<p style="display: inline-block;"></p>
+			</div>
+			<div id="item2_ring" class="vFlotante">
+				<hgroup>
+					<h1 class="titulo">Abrir</h1>
+				</hgroup>
+				<p style="display: inline-block;"></p>
+			</div>
+			<div id="item3_ring" class="vFlotante">
+				<hgroup>
+					<h1 class="titulo">Abrir</h1>
+				</hgroup>
+				<p style="display: inline-block;"></p>
+			</div>
+			<div id="item4_ring" class="vFlotante">
+				<hgroup>
+					<h1 class="titulo">Abrir</h1>
+				</hgroup>
+				<p style="display: inline-block;"></p>
+			</div>
+			<!-- 
 			<img src="images/home/relleno-ring.jpg" alt="relleno" />
+			 -->
 		</div>
 	</div>
 </div>

@@ -41,7 +41,37 @@
 	color: #525252;
 	font-size: 10px;
 }
-
+/*SECCION 2*/
+#seccion2 .contenedor > .col1 {
+	background-color: yellow;
+	height: 376px;
+	overflow-x: hidden;
+	width: 960px;
+}
+#seccion2 .contenedor > .col1 .vFlotante {
+	background-color: fuchsia;
+	left: 920px;
+	position: relative;
+	top: 0;	
+	transition: all 1s ease 0s;
+	width: 520px;
+	height: 94px;
+}
+#seccion2 .contenedor > .col1 .vFlotante#item1_ring {
+	background-color: red;
+}
+#seccion2 .contenedor > .col1 .vFlotante#item2_ring {
+	background-color: blue;
+}
+#seccion2 .contenedor > .col1 .vFlotante#item3_ring {
+	background-color: gray;
+}
+#seccion2 .contenedor > .col1 .vFlotante#item4_ring {
+	background-color: purple;
+}
+#seccion2 .contenedor > .col1 .vFlotante:HOVER {
+	left: 743px;
+}
 /*SECCION 3*/
 #seccion3 .contenedor #contenido {
 	height: 160px;
