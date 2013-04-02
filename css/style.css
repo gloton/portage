@@ -52,7 +52,12 @@
 	width: 426px;
 	height: 376px;
 	float: left;
-	background-color: aqua;
+}
+#seccion2 .contenedor .wrap_ring > .col1 #anillos {
+	width: 318px;
+	height: 332px;
+	margin-left: 101px;
+	margin-top: 20px;
 }
 #seccion2 .contenedor .wrap_ring > .col2 {
 	width: 534px;

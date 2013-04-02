@@ -74,6 +74,9 @@
 	<div class="contenedor">
 		<div class="wrap_ring">
 			<div class="col1">
+				<div id="anillos">
+					<img src="images/home/ring/anillo-verde.png" alt="Anillo verde" />
+				</div>
 			</div>
 			<div class="col2">
 				<ul id="menuring">
