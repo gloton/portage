@@ -43,7 +43,7 @@
 }
 /*SECCION 2*/
 #seccion2 .contenedor > .col1 {
-	background: url("../images/home/ring/item1.jpg") no-repeat 1px 1px transparent;
+	background: url("../images/home/ring/bg_ring.jpg") repeat-x 0 0 transparent;
 	height: 376px;
 	overflow-x: hidden;
 	width: 960px;
