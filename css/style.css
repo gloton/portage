@@ -43,7 +43,7 @@
 }
 /*SECCION 2*/
 #seccion2 .contenedor > .col1 {
-	background-color: yellow;
+	background: url("../images/home/ring/item1.jpg") no-repeat 1px 1px transparent;
 	height: 376px;
 	overflow-x: hidden;
 	width: 960px;
@@ -58,7 +58,7 @@
 	height: 94px;
 }
 #seccion2 .contenedor > .col1 .vFlotante#item1_ring {
-	background-color: red;
+	background-color: #4C8643;
 }
 #seccion2 .contenedor > .col1 .vFlotante#item2_ring {
 	background-color: blue;
@@ -167,4 +167,14 @@
 }
 #seccion4 .contenedor footer .col2 ul#menu_footer li a {
 	color: #FFFFFF;
+}
+/*MENU RING*/
+#seccion2 .contenedor .col1 ul#menuring .vFlotante ul {
+	height: 260px;
+	margin-left: 15px;
+	position: relative;
+	right: 330px;
+	top: 80px;
+	width: 300px;
+	display: none;
 }

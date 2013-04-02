@@ -17,12 +17,19 @@
 	</script>
 	<script type="text/javascript">
 	$(document).ready( function (){
-        //
-        $( ".vFlotante").click(function (){
+        //expander pestaña actualmente cliqueada y contraer los demas
+        $( ".vFlotante").click(function (event){
+            //contraer pestañas
         	$( ".vFlotante").css("left","920px");
+        	//expander pestaña
             $(this).css("left","743px");
+            //mostrar submenu
+            $("#seccion2 .contenedor .col1 ul#menuring .vFlotante ul").css("display","block");
+            event.preventDefault();
       	});
-        
+
+        //
+             
 	});
 	
 	</script>
@@ -67,7 +74,13 @@
 	<div class="contenedor">
 		<div class="col1">
 			<ul id="menuring">
-				<li id="item1_ring" class="vFlotante"><a href="#">menu1</a></li>
+				<li id="item1_ring" class="vFlotante active parent">
+					<a href="#">menu1</a>
+					<ul>
+						<li><a href="">Submenu 1</a></li>
+						<li><a href="">Submenu 2</a></li>
+					</ul>
+				</li>
 				<li id="item2_ring" class="vFlotante"><a href="#">menu2</a></li>
 				<li id="item3_ring" class="vFlotante"><a href="#">menu3</a></li>
 				<li id="item4_ring" class="vFlotante"><a href="#">menu4</a></li>
