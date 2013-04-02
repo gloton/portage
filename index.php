@@ -3,10 +3,10 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Home - Portage</title>
-	<link rel="styleSheet" href="css/reset.css" type="text/css" media="screen" />
-	<link rel="styleSheet" href="css/style.css" type="text/css" media="screen" />
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js" ></script>
-	<script src="js/fonts/cufon-yui.js" type="text/javascript"></script>
+	<link href="css/reset.css" type="text/css" media="screen" rel="styleSheet" />
+	<link href="css/style.css" type="text/css" media="screen" rel="styleSheet" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js" type="text/javascript"></script>
+	<script src="js/fonts/cufon-yui.js" type="text/javascript" type="text/javascript"></script>
 	<script src="js/fonts/DIN_Alternate_Light_300.font.js" type="text/javascript"></script>
 	<script src="js/fonts/DIN_400-DIN_Alternate_700.font.js" type="text/javascript"></script>
 	<script src="js/fonts/DIN_Alternate_Medium_500.font.js" type="text/javascript"></script>
@@ -14,6 +14,17 @@
 		Cufon.replace(".menu, .menu_topright, #seccion4",{fontFamily:"DIN Alternate Light"});
 		Cufon.replace(".boxarticulo p",{fontFamily:"DIN"});
 		Cufon.replace(".boxarticulo h5",{fontFamily:"DIN Alternate","font-weight":700});
+	</script>
+	<script type="text/javascript">
+	$(document).ready( function (){
+        //
+        $( ".vFlotante").click(function (){
+        	$( ".vFlotante").css("left","920px");
+            $(this).css("left","743px");
+      	});
+        
+	});
+	
 	</script>
 	 <!--[if lt IE 9]>
 	<script type="text/javascript">
@@ -55,30 +66,13 @@
 <div id="seccion2">
 	<div class="contenedor">
 		<div class="col1">
-			<div id="item1_ring" class="vFlotante">
-				<hgroup>
-					<h1 class="titulo">Abrir</h1>
-				</hgroup>
-				<p style="display: inline-block;"></p>
-			</div>
-			<div id="item2_ring" class="vFlotante">
-				<hgroup>
-					<h1 class="titulo">Abrir</h1>
-				</hgroup>
-				<p style="display: inline-block;"></p>
-			</div>
-			<div id="item3_ring" class="vFlotante">
-				<hgroup>
-					<h1 class="titulo">Abrir</h1>
-				</hgroup>
-				<p style="display: inline-block;"></p>
-			</div>
-			<div id="item4_ring" class="vFlotante">
-				<hgroup>
-					<h1 class="titulo">Abrir</h1>
-				</hgroup>
-				<p style="display: inline-block;"></p>
-			</div>
+			<ul id="menuring">
+				<li id="item1_ring" class="vFlotante"><a href="#">menu1</a></li>
+				<li id="item2_ring" class="vFlotante"><a href="#">menu2</a></li>
+				<li id="item3_ring" class="vFlotante"><a href="#">menu3</a></li>
+				<li id="item4_ring" class="vFlotante"><a href="#">menu4</a></li>
+			</ul>
+
 			<!-- 
 			<img src="images/home/relleno-ring.jpg" alt="relleno" />
 			 -->
