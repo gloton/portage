@@ -78,13 +78,13 @@
 	background-color: #4C8643;
 }
 #seccion2 .contenedor .wrap_ring > .col2 .vFlotante#item2_ring {
-	background-color: blue;
+	background-color: #FA653D;
 }
 #seccion2 .contenedor .wrap_ring > .col2 .vFlotante#item3_ring {
-	background-color: gray;
+	background-color: #FCC62B;
 }
 #seccion2 .contenedor .wrap_ring > .col2 .vFlotante#item4_ring {
-	background-color: purple;
+	background-color: #57B3D4;
 }
 /*sub menu ring*/
 #seccion2 .contenedor .wrap_ring > .col2 ul#menuring .vFlotante ul {

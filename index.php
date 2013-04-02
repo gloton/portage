@@ -23,6 +23,21 @@
         	$( ".vFlotante").css("left","494px");
         	//expander pestaña
             $(this).css("left","317px");
+            var id_tab = $(this).attr("id");
+            //alert(id_tab);
+            switch (id_tab) {
+	            case "item2_ring":
+	            	$("#areasring").attr("src","images/home/ring/anillo-naranjo.png");
+					break;
+	            case "item3_ring":
+	            	$("#areasring").attr("src","images/home/ring/anillo-amarillo.png");
+					break;
+	            case "item4_ring":
+	            	$("#areasring").attr("src","images/home/ring/anillo-todos-colores.png");
+					break;
+	            default:
+	            	$("#areasring").attr("src","images/home/ring/anillo-verde.png");
+        	}
             //mostrar submenu
             $("#seccion2 .contenedor .wrap_ring > .col2 ul#menuring .vFlotante ul").css("display","block");
             event.preventDefault();
