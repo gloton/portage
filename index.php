@@ -20,11 +20,11 @@
         //expander pestaña actualmente cliqueada y contraer los demas
         $( ".vFlotante").click(function (event){
             //contraer pestañas
-        	$( ".vFlotante").css("left","920px");
+        	$( ".vFlotante").css("left","494px");
         	//expander pestaña
-            $(this).css("left","743px");
+            $(this).css("left","317px");
             //mostrar submenu
-            $("#seccion2 .contenedor .col1 ul#menuring .vFlotante ul").css("display","block");
+            $("#seccion2 .contenedor .wrap_ring > .col2 ul#menuring .vFlotante ul").css("display","block");
             event.preventDefault();
       	});
 
@@ -72,23 +72,23 @@
 </div>
 <div id="seccion2">
 	<div class="contenedor">
-		<div class="col1">
-			<ul id="menuring">
-				<li id="item1_ring" class="vFlotante active parent">
-					<a href="#">menu1</a>
-					<ul>
-						<li><a href="">Submenu 1</a></li>
-						<li><a href="">Submenu 2</a></li>
-					</ul>
-				</li>
-				<li id="item2_ring" class="vFlotante"><a href="#">menu2</a></li>
-				<li id="item3_ring" class="vFlotante"><a href="#">menu3</a></li>
-				<li id="item4_ring" class="vFlotante"><a href="#">menu4</a></li>
-			</ul>
-
-			<!-- 
-			<img src="images/home/relleno-ring.jpg" alt="relleno" />
-			 -->
+		<div class="wrap_ring">
+			<div class="col1">
+			</div>
+			<div class="col2">
+				<ul id="menuring">
+					<li id="item1_ring" class="vFlotante active parent">
+						<a href="#">menu1</a>
+						<ul>
+							<li><a href="">Submenu 1</a></li>
+							<li><a href="">Submenu 2</a></li>
+						</ul>
+					</li>
+					<li id="item2_ring" class="vFlotante"><a href="#">menu2</a></li>
+					<li id="item3_ring" class="vFlotante"><a href="#">menu3</a></li>
+					<li id="item4_ring" class="vFlotante"><a href="#">menu4</a></li>
+				</ul>
+			</div>
 		</div>
 	</div>
 </div>
