@@ -72,14 +72,13 @@
 
         //abrir en cada cierto tiempo un tab
 		nro_tab = 1;	
-		$.timer(7000, function(temporizador){
-			   //alert("hola, pasaron 2 segundos");
+		$.timer(10000, function(temporizador){
 			   id_item_ring = "#item" + nro_tab + "_ring";
 			   $(id_item_ring).trigger('click' );
 			   nro_tab++;
 			   if (nro_tab == 5) {
 				   nro_tab = 1;
-				   temporizador.reset(3000);
+				   temporizador.reset(10000);
 			   }
 		});              
 	});
@@ -140,11 +139,17 @@
 					<li id="item1_ring" class="vFlotante active parent">
 						<a href="#">menu1</a>
 						<ul>
-							<li><a href="">Submenu 1</a></li>
-							<li><a href="">Submenu 2</a></li>
+							<li><a href="">Submenu 1.1</a></li>
+							<li><a href="">Submenu 1.2</a></li>
 						</ul>
 					</li>
-					<li id="item2_ring" class="vFlotante"><a href="#">menu2</a></li>
+					<li id="item2_ring" class="vFlotante">
+						<a href="#">menu2</a>
+						<ul>
+							<li><a href="">Submenu 2.1</a></li>
+							<li><a href="">Submenu 2.2</a></li>
+						</ul>						
+					</li>
 					<li id="item3_ring" class="vFlotante"><a href="#">menu3</a></li>
 					<li id="item4_ring" class="vFlotante"><a href="#">menu4</a></li>
 				</ul>
