@@ -10,6 +10,7 @@
 	<script src="js/fonts/DIN_Alternate_Light_300.font.js" type="text/javascript"></script>
 	<script src="js/fonts/DIN_400-DIN_Alternate_700.font.js" type="text/javascript"></script>
 	<script src="js/fonts/DIN_Alternate_Medium_500.font.js" type="text/javascript"></script>
+	<script src="js/jquery-timer/jquery-timer.js" type="text/javascript"></script>
 	<script type="text/javascript">
 		Cufon.replace(".menu, .menu_topright, #seccion4",{fontFamily:"DIN Alternate Light"});
 		Cufon.replace(".boxarticulo p",{fontFamily:"DIN"});
@@ -17,10 +18,16 @@
 	</script>
 	<script type="text/javascript">
 	$(document).ready( function (){
+		
         //expander pestaña actualmente cliqueada y contraer los demas
         $( ".vFlotante").click(function (event){
+            
             //contraer pestañas
         	$( ".vFlotante").css("left","494px");
+        	
+        	//esconder submenus
+        	$(".vFlotante ul").css("display","none");
+        	
         	//expander pestaña
             $(this).css("left","317px");
             var id_tab = $(this).attr("id");
@@ -38,14 +45,16 @@
 	            default:
 	            	$("#areasring").attr("src","images/home/ring/anillo-verde.png");
         	}
-            //mostrar submenu
-            $("#seccion2 .contenedor .wrap_ring > .col2 ul#menuring .vFlotante ul").css("display","block");
+        	
+            //mostrar submenu solo del tab seleccionado
+            id_tab_elegido = $(this).attr("id");
+            $("#"+id_tab_elegido+".vFlotante ul").css("display","block");
             event.preventDefault();
       	});
 
 		/*TRABAJAR CON GRAFICO ANILLO*/
         //abre pestaña por defecto
-        $( '#item1_ring' ).trigger('click' );
+        //$( '#item1_ring' ).trigger('click' );
         
         //trabajar con areas del grafico anillo
         $("#areatab1").click(function() {
@@ -59,8 +68,20 @@
 		});
         $("#areatab4").click(function() {
 			$( '#item4_ring' ).trigger('click' );
-		});						
-             
+		});
+
+        //abrir en cada cierto tiempo un tab
+		nro_tab = 1;	
+		$.timer(7000, function(temporizador){
+			   //alert("hola, pasaron 2 segundos");
+			   id_item_ring = "#item" + nro_tab + "_ring";
+			   $(id_item_ring).trigger('click' );
+			   nro_tab++;
+			   if (nro_tab == 5) {
+				   nro_tab = 1;
+				   temporizador.reset(3000);
+			   }
+		});              
 	});
 	</script>
 	 <!--[if lt IE 9]>
@@ -112,10 +133,6 @@
 						<area id="areatab3" shape="poly" coords="195,80,190,78,184,76,177,74,166,74,157,77,147,83,141,90,136,97,134,104,134,110,133,117,134,129,136,139,139,147,145,159,151,167,160,176,168,182,174,185,183,189,190,190,200,190,207,189,213,187,220,181,225,175,230,168,233,160,234,152,233,141,230,156,226,163,219,170,210,173,198,174,189,173,181,169,174,164,168,158,162,151,157,142,153,134,151,124,150,112,151,104,154,96,158,90,163,85,169,81,175,79" href="javascript:void(0);" target="_self" alt="tab3" />
 						<area id="areatab4" shape="poly" coords="205,95,198,92,189,92,181,96,175,103,173,110,173,120,175,128,179,136,185,143,191,148,200,152,211,153,218,150,223,144,227,135,226,126,224,135,218,141,209,144,201,142,194,137,189,132,185,124,183,116,183,110,185,103,189,98,194,95" href="javascript:void(0);" target="_self" alt="tab4" />
 					</map>				
-					
-					<!-- 
-					<img src="images/home/ring/anillo-verde.png" alt="Anillo verde" />
-					 -->
 				</div>
 			</div>
 			<div class="col2">
