@@ -45,7 +45,6 @@
 #seccion2 .contenedor .wrap_ring {
 	background: url("../images/home/ring/bg_ring.jpg") repeat-x 0 0 transparent;
 	height: 376px;
-	overflow-x: hidden;
 	width: 960px;
 }
 #seccion2 .contenedor .wrap_ring > .col1 {
@@ -60,10 +59,11 @@
 	margin-top: 20px;
 }
 #seccion2 .contenedor .wrap_ring > .col2 {
-	width: 534px;
+	background-color: olive;
 	float: left;
 	height: 376px;
-	background-color: olive;
+	overflow: hidden;
+	width: 534px;
 }
 #seccion2 .contenedor .wrap_ring > .col2 .vFlotante {
 	background-color: fuchsia;

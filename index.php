@@ -75,7 +75,6 @@
 		});
 
         //abrir en cada cierto tiempo un tab
-        /*
 		nro_tab = 1;	
 		$.timer(10000, function(temporizador){
 			   id_item_ring = "#item" + nro_tab + "_ring";
@@ -86,7 +85,6 @@
 				   temporizador.reset(10000);
 			   }
 		});     
-		*/         
 	});
 	</script>
 	 <!--[if lt IE 9]>
