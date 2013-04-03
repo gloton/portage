@@ -35,20 +35,24 @@
             switch (id_tab) {
 	            case "item2_ring":
 	            	$("#areasring").attr("src","images/home/ring/anillo-naranjo.png");
+	            	arriba = "-14px";
 					break;
 	            case "item3_ring":
 	            	$("#areasring").attr("src","images/home/ring/anillo-amarillo.png");
+	            	arriba = "-108px";
 					break;
 	            case "item4_ring":
 	            	$("#areasring").attr("src","images/home/ring/anillo-todos-colores.png");
+	            	arriba = "-202px";
 					break;
 	            default:
 	            	$("#areasring").attr("src","images/home/ring/anillo-verde.png");
+	            	arriba = "80px";
         	}
         	
             //mostrar submenu solo del tab seleccionado
             id_tab_elegido = $(this).attr("id");
-            $("#"+id_tab_elegido+".vFlotante ul").css("display","block");
+            $("#"+id_tab_elegido+".vFlotante ul").css({'display' : 'block', 'top' : arriba});
             event.preventDefault();
       	});
 
@@ -71,6 +75,7 @@
 		});
 
         //abrir en cada cierto tiempo un tab
+        /*
 		nro_tab = 1;	
 		$.timer(10000, function(temporizador){
 			   id_item_ring = "#item" + nro_tab + "_ring";
@@ -80,7 +85,8 @@
 				   nro_tab = 1;
 				   temporizador.reset(10000);
 			   }
-		});              
+		});     
+		*/         
 	});
 	</script>
 	 <!--[if lt IE 9]>
@@ -150,8 +156,20 @@
 							<li><a href="">Submenu 2.2</a></li>
 						</ul>						
 					</li>
-					<li id="item3_ring" class="vFlotante"><a href="#">menu3</a></li>
-					<li id="item4_ring" class="vFlotante"><a href="#">menu4</a></li>
+					<li id="item3_ring" class="vFlotante">
+						<a href="#">menu3</a>
+						<ul>
+							<li><a href="">Submenu 3.1</a></li>
+							<li><a href="">Submenu 3.2</a></li>
+						</ul>							
+					</li>
+					<li id="item4_ring" class="vFlotante">
+						<a href="#">menu4</a>
+						<ul>
+							<li><a href="">Submenu 4.1</a></li>
+							<li><a href="">Submenu 4.2</a></li>
+						</ul>							
+					</li>
 				</ul>
 			</div>
 		</div>
