@@ -73,8 +73,39 @@
 	transition: all 1s ease 0s;
 	width: 520px;
 }
+#seccion2 .contenedor .wrap_ring > .col2 .vFlotante.sl {
+	height: 64px;
+	padding-top: 30px;
+}
+#seccion2 .contenedor .wrap_ring > .col2 .vFlotante.dl {
+    height: 84px;
+    padding-top: 10px;
+}
+#seccion2 .contenedor .wrap_ring > .col2 .vFlotante a.text_tab {
+	font-size: 27px;
+	margin-left: 12px;
+}
 #seccion2 .contenedor .wrap_ring > .col2 .vFlotante#item1_ring {
 	background-color: #4C8643;
+}
+
+#seccion2 .contenedor .wrap_ring > .col2 .vFlotante#item1_ring a {
+	color: #9BEC8F;
+}
+#seccion2 .contenedor .wrap_ring > .col2 .vFlotante a {
+	visibility: hidden;
+}
+#seccion2 .contenedor .wrap_ring > .col2 .vFlotante.active a {
+	visibility: visible;
+}
+#seccion2 .contenedor .wrap_ring > .col2 .vFlotante#item2_ring a {
+	color: #FCC87E;
+}
+#seccion2 .contenedor .wrap_ring > .col2 .vFlotante#item3_ring a {
+	color: #FDFC91;
+}
+#seccion2 .contenedor .wrap_ring > .col2 .vFlotante#item4_ring a {
+	color: #B5F7FD;
 }
 #seccion2 .contenedor .wrap_ring > .col2 .vFlotante#item2_ring {
 	background-color: #FA653D;

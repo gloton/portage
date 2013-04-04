@@ -10,6 +10,7 @@
 	<script src="js/fonts/DIN_Alternate_Light_300.font.js" type="text/javascript"></script>
 	<script src="js/fonts/DIN_400-DIN_Alternate_700.font.js" type="text/javascript"></script>
 	<script src="js/fonts/DIN_Alternate_Medium_500.font.js" type="text/javascript"></script>
+	<script src="js/fonts/DINCond-Medium_500.font.js" type="text/javascript"></script>
 	<script src="js/jquery-timer/jquery-timer.js" type="text/javascript"></script>
 	<script type="text/javascript">
 		Cufon.replace(".menu, .menu_topright, #seccion4",{fontFamily:"DIN Alternate Light"});
@@ -18,6 +19,7 @@
 		Cufon.replace(".vFlotante ul li h5",{fontFamily:"DIN Alternate Medium"});
 		Cufon.replace(".vFlotante .titu_menuring",{fontFamily:"DIN Alternate Medium"});
 		Cufon.replace(".vFlotante .subtitu_menuring",{fontFamily:"DIN Alternate Light"});
+		Cufon.replace(".text_tab",{fontFamily:"DINCond-Medium"});
 	</script>
 	<script type="text/javascript">
 	$(document).ready( function (){
@@ -27,6 +29,7 @@
             
             //contraer pestañas
         	$( ".vFlotante").css({'left' : '494px', 'backgroundColor' : "transparent"});
+        	$(".vFlotante").removeClass("active");
         	
         	//esconder submenus
         	$(".vFlotante ul").css("display","none");
@@ -38,32 +41,32 @@
             switch (id_tab) {
 	            case "item2_ring":
 	            	$("#areasring").attr("src","images/home/ring/anillo-naranjo.png");
-	            	arriba = "-14px";
+	            	arriba = "-58px";
 	            	colorfondo = "#FA653D";
 					break;
 	            case "item3_ring":
 	            	$("#areasring").attr("src","images/home/ring/anillo-amarillo.png");
 	            	colorfondo = "#FCC62B";
-	            	arriba = "-108px";
+	            	arriba = "-153px";
 					break;
 	            case "item4_ring":
 	            	$("#areasring").attr("src","images/home/ring/anillo-todos-colores.png");
 	            	colorfondo = "#57B3D4";
-	            	arriba = "-202px";
+	            	arriba = "-247px";
 					break;
 	            default:
 	            	$("#areasring").attr("src","images/home/ring/anillo-verde.png");
 	            	colorfondo = "#4C8643";
-	            	arriba = "80px";
+	            	arriba = "35px";
         	}
 
         	//expander pestaña
             $(this).css({'left' : '317px', 'backgroundColor' : colorfondo});
-            
+            $(this).addClass("active");
             //mostrar submenu solo del tab seleccionado
             id_tab_elegido = $(this).attr("id");
             $("#"+id_tab_elegido+".vFlotante ul").css({'display' : 'block', 'top' : arriba});
-            //$("#"+id_tab_elegido+".vFlotante ul").css({'display' : 'block', 'top' : arriba, 'backgroundColor' : colorfondo});
+
             event.preventDefault();
       	});
 
@@ -176,8 +179,8 @@
 			</div>
 			<div class="col2">
 				<ul id="menuring">
-					<li id="item1_ring" class="vFlotante active parent">
-						<a href="#">menu1</a>
+					<li id="item1_ring" class="vFlotante active parent sl">
+						<a href="#" class="text_tab">Vision Systems</a>
 						<ul>
 							<li>
 								<h5>SOLUCIONES</h5>
@@ -192,8 +195,8 @@
 							</li>
 						</ul>
 					</li>
-					<li id="item2_ring" class="vFlotante">
-						<a href="#">menu2</a>
+					<li id="item2_ring" class="vFlotante dl">
+						<a href="#" class="text_tab">Advanced <br /><span style="margin-left: 12px;">Regulatory Control</span></a>
 						<ul>
 							<li>
 								<h5>SOLUCIONES</h5>
@@ -204,8 +207,8 @@
 							</li>
 						</ul>						
 					</li>
-					<li id="item3_ring" class="vFlotante">
-						<a href="#">menu3</a>
+					<li id="item3_ring" class="vFlotante sl">
+						<a href="#" class="text_tab">Expert System</a>
 						<ul>
 							<li>
 								<h5>SOLUCIONES</h5>
@@ -220,8 +223,8 @@
 							</li>
 						</ul>							
 					</li>
-					<li id="item4_ring" class="vFlotante">
-						<a href="#">menu4</a>
+					<li id="item4_ring" class="vFlotante sl">
+						<a href="#" class="text_tab">Fit for Purpose</a>
 						<ul>
 							<li>
 								<h5>SOLUCIONES</h5>
