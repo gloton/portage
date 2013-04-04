@@ -15,6 +15,9 @@
 		Cufon.replace(".menu, .menu_topright, #seccion4",{fontFamily:"DIN Alternate Light"});
 		Cufon.replace(".boxarticulo p",{fontFamily:"DIN"});
 		Cufon.replace(".boxarticulo h5",{fontFamily:"DIN Alternate","font-weight":700});
+		Cufon.replace(".vFlotante ul li h5",{fontFamily:"DIN Alternate Medium"});
+		Cufon.replace(".vFlotante .titu_menuring",{fontFamily:"DIN Alternate Medium"});
+		Cufon.replace(".vFlotante .subtitu_menuring",{fontFamily:"DIN Alternate Light"});
 	</script>
 	<script type="text/javascript">
 	$(document).ready( function (){
@@ -23,7 +26,7 @@
         $( ".vFlotante").click(function (event){
             
             //contraer pestañas
-        	$( ".vFlotante").css("left","494px");
+        	$( ".vFlotante").css({'left' : '494px', 'backgroundColor' : "transparent"});
         	
         	//esconder submenus
         	$(".vFlotante ul").css("display","none");
@@ -31,34 +34,42 @@
         	//expander pestaña
             $(this).css("left","317px");
             var id_tab = $(this).attr("id");
-            //alert(id_tab);
+
             switch (id_tab) {
 	            case "item2_ring":
 	            	$("#areasring").attr("src","images/home/ring/anillo-naranjo.png");
 	            	arriba = "-14px";
+	            	colorfondo = "#FA653D";
 					break;
 	            case "item3_ring":
 	            	$("#areasring").attr("src","images/home/ring/anillo-amarillo.png");
+	            	colorfondo = "#FCC62B";
 	            	arriba = "-108px";
 					break;
 	            case "item4_ring":
 	            	$("#areasring").attr("src","images/home/ring/anillo-todos-colores.png");
+	            	colorfondo = "#57B3D4";
 	            	arriba = "-202px";
 					break;
 	            default:
 	            	$("#areasring").attr("src","images/home/ring/anillo-verde.png");
+	            	colorfondo = "#4C8643";
 	            	arriba = "80px";
         	}
-        	
+
+        	//expander pestaña
+            $(this).css({'left' : '317px', 'backgroundColor' : colorfondo});
+            
             //mostrar submenu solo del tab seleccionado
             id_tab_elegido = $(this).attr("id");
             $("#"+id_tab_elegido+".vFlotante ul").css({'display' : 'block', 'top' : arriba});
+            //$("#"+id_tab_elegido+".vFlotante ul").css({'display' : 'block', 'top' : arriba, 'backgroundColor' : colorfondo});
             event.preventDefault();
       	});
 
 		/*TRABAJAR CON GRAFICO ANILLO*/
         //abre pestaña por defecto
-        //$( '#item1_ring' ).trigger('click' );
+        $( '#item1_ring' ).trigger('click' );
         
         //trabajar con areas del grafico anillo
         $("#areatab1").click(function() {
@@ -84,7 +95,32 @@
 				   nro_tab = 1;
 				   temporizador.reset(10000);
 			   }
-		});     
+		});  
+
+		//click para ir a enlaces en submenus ring
+		$("#portage_pfc").click(function (event) {
+			//alert("Ir al enlace de portage pfc");
+			location.href="http://www.yahoo.com"
+			event.preventDefault();
+		});   
+		$("#portage_parc").click(function (event) {
+			alert("Ir al enlace de portage_parc");
+			event.preventDefault();
+		});   
+		$("#portage_aware").click(function (event) {
+			alert("Ir al enlace de portage_aware");
+			event.preventDefault();
+		});   
+		$("#portage_aware_insight").click(function (event) {
+			alert("Ir al enlace de portage_aware_insight");
+			event.preventDefault();
+		});   
+		$("#portage_ffp").click(function (event) {
+			alert("Ir al enlace de portage_aware_insight");
+			event.preventDefault();
+		});   
+
+		
 	});
 	</script>
 	 <!--[if lt IE 9]>
@@ -143,30 +179,58 @@
 					<li id="item1_ring" class="vFlotante active parent">
 						<a href="#">menu1</a>
 						<ul>
-							<li><a href="">Submenu 1.1</a></li>
-							<li><a href="">Submenu 1.2</a></li>
+							<li>
+								<h5>SOLUCIONES</h5>
+								<a id="portage_pfc" href="http://www.kenya.cl" title="Portage PFC" target="_self">
+									<p class="titu_menuring" >PORTAGE PFC</p>
+									<p class="subtitu_menuring">Portage Froth Characterization</p>
+								</a>
+								<a id="portage_prc" href="http://www.google.cl" title="Portage PRC" target="_self">
+									<p class="titu_menuring" >PORTAGE PRC</p>
+									<p class="subtitu_menuring">Portage Rock Characterization</p>
+								</a>							
+							</li>
 						</ul>
 					</li>
 					<li id="item2_ring" class="vFlotante">
 						<a href="#">menu2</a>
 						<ul>
-							<li><a href="">Submenu 2.1</a></li>
-							<li><a href="">Submenu 2.2</a></li>
+							<li>
+								<h5>SOLUCIONES</h5>
+								<a id="portage_parc" href="http://www.kenya.cl" title="Portage PARC" target="_self">
+									<p class="titu_menuring" >PORTAGE PARC</p>
+									<p class="subtitu_menuring">Portage Advanced Regulatory Control</p>
+								</a>
+							</li>
 						</ul>						
 					</li>
 					<li id="item3_ring" class="vFlotante">
 						<a href="#">menu3</a>
 						<ul>
-							<li><a href="">Submenu 3.1</a></li>
-							<li><a href="">Submenu 3.2</a></li>
+							<li>
+								<h5>SOLUCIONES</h5>
+								<a id="portage_aware" href="http://www.kenya.cl" title="Portage AWARE" target="_self">
+									<p class="titu_menuring" >PORTAGE AWARE</p>
+									<p class="subtitu_menuring">Portage Expert System</p>
+								</a>
+								<a id="portage_aware_insight" href="http://www.google.cl" title="Portage AWARE INSIGHT" target="_self">
+									<p class="titu_menuring" >PORTAGE AWARE INSIGHT</p>
+									<p class="subtitu_menuring">Portage Control Loops Monitoring</p>
+								</a>							
+							</li>
 						</ul>							
 					</li>
 					<li id="item4_ring" class="vFlotante">
 						<a href="#">menu4</a>
 						<ul>
-							<li><a href="">Submenu 4.1</a></li>
-							<li><a href="">Submenu 4.2</a></li>
-						</ul>							
+							<li>
+								<h5>SOLUCIONES</h5>
+								<a id="portage_ffp" href="http://www.kenya.cl" title="Portage PFC" target="_self">
+									<p class="titu_menuring" >PORTAGE FFP</p>
+									<p class="subtitu_menuring">Portage Fit for Purpose</p>
+								</a>							
+							</li>
+						</ul>		
 					</li>
 				</ul>
 			</div>

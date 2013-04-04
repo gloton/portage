@@ -59,14 +59,13 @@
 	margin-top: 20px;
 }
 #seccion2 .contenedor .wrap_ring > .col2 {
-	background-color: olive;
+	background: url("../images/home/ring/bg_tabs_ring.jpg") no-repeat 494px 0px transparent;
 	float: left;
 	height: 376px;
 	overflow: hidden;
 	width: 534px;
 }
 #seccion2 .contenedor .wrap_ring > .col2 .vFlotante {
-	background-color: fuchsia;
 	height: 94px;
 	left: 494px;
 	position: relative;
@@ -85,6 +84,32 @@
 }
 #seccion2 .contenedor .wrap_ring > .col2 .vFlotante#item4_ring {
 	background-color: #57B3D4;
+}
+#seccion2 .contenedor .wrap_ring > .col2 #item1_ring.vFlotante ul li a {
+	color: #4C8643;
+}
+#seccion2 .contenedor .wrap_ring > .col2 #item2_ring.vFlotante ul li a {
+	color: #FA653D;
+}
+#seccion2 .contenedor .wrap_ring > .col2 #item3_ring.vFlotante ul li a {
+	color: #d99a02;
+}
+#seccion2 .contenedor .wrap_ring > .col2 #item4_ring.vFlotante ul li a {
+	color: #57B3D4;
+}
+#seccion2 .contenedor .wrap_ring > .col2 .vFlotante ul li h5 {
+	margin-bottom: 8px;
+	color: #919191;
+}
+#seccion2 .contenedor .wrap_ring > .col2 .vFlotante ul li h5,
+#seccion2 .contenedor .wrap_ring > .col2 li ul li a p.titu_menuring {
+	font-size: 14px;
+}
+#seccion2 .contenedor .wrap_ring > .col2 li ul li a p.subtitu_menuring {
+	color: #505050;
+	font-size: 12px;
+	margin-bottom: 6px;
+	
 }
 /*sub menu ring*/
 #seccion2 .contenedor .wrap_ring > .col2 ul#menuring .vFlotante ul {
