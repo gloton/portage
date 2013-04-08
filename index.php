@@ -163,6 +163,7 @@
 		</header>
 	</div>
 </div>
+<div class="clearfix"></div>
 <div id="seccion2">
 	<div class="contenedor">
 		<div class="wrap_ring">
@@ -240,6 +241,7 @@
 		</div>
 	</div>
 </div>
+<div class="clearfix"></div>
 <div id="seccion3">
 	<div class="contenedor">
 		<div id="contenido">
@@ -269,6 +271,7 @@
 		</div>
 	</div>
 </div>
+<div class="clearfix"></div>
 <div id="seccion4">
 	<div class="contenedor">
 		<footer>
@@ -284,6 +287,5 @@
 		</footer>
 	</div>
 </div>
-	
 </body>
 </html>

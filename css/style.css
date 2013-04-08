@@ -158,6 +158,9 @@
 }
 */
 /*SECCION 3*/
+#seccion3 .contenedor {
+	margin-top: 2px;
+}
 #seccion3 .contenedor #contenido {
 	height: 160px;
 	background-color: #EFEFEF;
