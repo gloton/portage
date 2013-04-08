@@ -15,7 +15,7 @@
 	<script type="text/javascript">
 		Cufon.replace(".menu, .menu_topright, #seccion4",{fontFamily:"DIN Alternate Light"});
 		Cufon.replace(".boxarticulo p",{fontFamily:"DIN"});
-		Cufon.replace(".boxarticulo h5",{fontFamily:"DIN Alternate","font-weight":700});
+		Cufon.replace(".boxarticulo h5,ul.menu_rightbelow a",{fontFamily:"DIN Alternate","font-weight":700});
 		Cufon.replace(".vFlotante ul li h5",{fontFamily:"DIN Alternate Medium"});
 		Cufon.replace(".vFlotante .titu_menuring",{fontFamily:"DIN Alternate Medium"});
 		Cufon.replace(".vFlotante .subtitu_menuring",{fontFamily:"DIN Alternate Light"});
