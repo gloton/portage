@@ -123,6 +123,16 @@
 			event.preventDefault();
 		});   
 
+		/*TRABAJO CON MENU SECCION 1*/
+		$("#seccion1 header .col2 ul.menu li").click(function(event){
+			$("ul",this).css("display","block");
+			event.preventDefault();
+		});
+
+		$(".menu li:not(.active)").click( function(event) {
+			$("#seccion1 header .col2 ul.menu li > ul").css("display","none");
+			event.stopPropagation();
+		});		
 		
 	});
 	</script>
@@ -147,7 +157,17 @@
 			</div>
 			<div class="col2">
 				<ul class="menu">
-					<li><a href="#">NOSOTROS</a></li>
+					<li class="parent current active">
+						<a href="#">NOSOTROS</a>
+						<ul>
+							<li class="active"><a href="#">COMPAÑÍA</a></li>
+							<li><a href="#">VISIÓN Y VALORES</a></li>
+							<li><a href="#">PORTAGE EN EL MUNDO</a></li>
+							<li><a href="#">RSE</a></li>
+							<li><a href="#">ALIANZAS</a></li>
+						</ul>
+						<div class="clearfix"></div>
+					</li>
 					<li><a href="#">SOLUCIONES</a></li>
 					<li><a href="#">PROYECTOS</a></li>
 					<li><a href="#">NOTICIAS</a></li>
