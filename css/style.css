@@ -3,6 +3,9 @@
 	margin: 0 auto;
 }
 /*SECCION 1*/
+#seccion1 {
+	height: 140px;
+}
 #seccion1 header {
 	height: 140px;
 }
@@ -28,8 +31,9 @@
 }
 #seccion1 header .col3 {
 	float: left;
+	margin-left: 10px;
 	margin-top: 4px;
-	width: 146px;
+	width: 136px;
 }
 #seccion1 header .col3 ul.menu_topright li {
 	float: left;
@@ -73,6 +77,9 @@
 	color: #DC7243;
 }
 /*SECCION 2*/
+#seccion2 {
+	background: url("../images/bg_seccion1.png") repeat-x scroll 0px 0px transparent;
+}
 #seccion2 .contenedor .wrap_ring {
 	background: url("../images/home/ring/bg_ring.jpg") repeat-x 0 0 transparent;
 	height: 376px;
