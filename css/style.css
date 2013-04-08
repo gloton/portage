@@ -23,6 +23,9 @@
 	color: #525252;
 	font-size: 12px;
 }
+#seccion1 header .col2 ul.menu li.active a {
+	color: #DC7243;
+}
 #seccion1 header .col3 {
 	float: left;
 	margin-top: 4px;
@@ -40,6 +43,27 @@
 #seccion1 header .col3 ul.menu_topright li a {
 	color: #525252;
 	font-size: 10px;
+}
+/*menu*/
+#seccion1 header .col2 ul.menu li {
+	position: relative;
+}
+#seccion1 header .col2 ul.menu li.active > ul li {
+	padding-left: 14px;
+}
+#seccion1 header .col2 ul.menu li.active > ul li.active {
+	background: url("../images/flecha_menu_activo.png") no-repeat scroll 0 6px transparent;
+}
+#seccion1 header .col2 ul.menu li.parent ul {
+	left: 100px;
+	line-height: 16px;
+	position: absolute;
+	top: 2px;
+}
+#seccion1 header .col2 ul.menu li.parent > ul li a,
+#seccion1 header .col2 ul.menu li.parent > ul li a:ACTIVE {
+	font-size: 11px;
+	color: #DC7243;
 }
 /*SECCION 2*/
 #seccion2 .contenedor .wrap_ring {
