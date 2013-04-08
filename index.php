@@ -123,6 +123,16 @@
 			event.preventDefault();
 		});   
 
+		/*TRABAJO CON MENU SECCION 1*/
+		$("#seccion1 header .col2 ul.menu li").click(function(event){
+			$("ul",this).css("display","block");
+			event.preventDefault();
+		});
+
+		$(".menu li:not(.active)").click( function(event) {
+			$("#seccion1 header .col2 ul.menu li > ul").css("display","none");
+			event.stopPropagation();
+		});		
 		
 	});
 	</script>
