@@ -46,12 +46,13 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-div.clearfix{
-     width:1px;
-     height:1px;
-     display:block;
-     clear:both;
-     content: ".";
+
+.clearfix:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
 }
 
 a {

@@ -13,12 +13,12 @@
 	<script src="js/fonts/DINCond-Medium_500.font.js" type="text/javascript"></script>
 	<script src="js/jquery-timer/jquery-timer.js" type="text/javascript"></script>
 	<script type="text/javascript">
-		Cufon.replace(".menu, .menu_topright, #seccion4",{fontFamily:"DIN Alternate Light"});
+		Cufon.replace(".menu, .menu_topright, #seccion4",{fontFamily:"DIN Alternate","font-weight":700});
 		Cufon.replace(".boxarticulo p",{fontFamily:"DIN"});
 		Cufon.replace(".boxarticulo h5,ul.menu_rightbelow a",{fontFamily:"DIN Alternate","font-weight":700});
 		Cufon.replace(".vFlotante ul li h5",{fontFamily:"DIN Alternate Medium"});
 		Cufon.replace(".vFlotante .titu_menuring",{fontFamily:"DIN Alternate Medium"});
-		Cufon.replace(".vFlotante .subtitu_menuring",{fontFamily:"DIN Alternate Light"});
+		Cufon.replace(".vFlotante .subtitu_menuring,#seccion4",{fontFamily:"DIN Alternate Light"});
 		Cufon.replace(".text_tab",{fontFamily:"DINCond-Medium"});
 	</script>
 	<script type="text/javascript">
@@ -56,7 +56,7 @@
 					break;
 	            default:
 	            	$("#areasring").attr("src","images/home/ring/anillo-verde.png");
-	            	colorfondo = "#4C8643";
+	            	colorfondo = "#009142";
 	            	arriba = "35px";
         	}
 
@@ -149,7 +149,7 @@
 	<![endif]-->
 </head>
 <body>
-<div id="seccion1">
+<div id="seccion1" class="clearfix">
 	<div class="contenedor">
 		<header>
 			<div class="col1">
@@ -183,7 +183,6 @@
 		</header>
 	</div>
 </div>
-<div class="clearfix"></div>
 <div id="seccion2">
 	<div class="contenedor">
 		<div class="wrap_ring">
@@ -217,7 +216,7 @@
 						</ul>
 					</li>
 					<li id="item2_ring" class="vFlotante dl">
-						<a href="#" class="text_tab">Advanced <br /><span style="margin-left: 12px;">Regulatory Control</span></a>
+						<a href="#" class="text_tab">Advanced <br /><span style="margin-left: 20px;">Regulatory Control</span></a>
 						<ul>
 							<li>
 								<h5>SOLUCIONES</h5>

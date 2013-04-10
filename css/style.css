@@ -4,14 +4,21 @@
 }
 /*SECCION 1*/
 #seccion1 {
+	background-color: rgba(255, 255, 255, 0.97) !important;
+	box-shadow: 0 0 14px rgba(22, 22, 22, 0.4);
 	height: 140px;
+	margin-top: 0;
+	position: fixed;
+	text-align: left;
+	width: 100%;
+	z-index: 300;
 }
 #seccion1 header {
 	height: 140px;
 }
 #seccion1 header .col1 {
 	float: left;
-	margin-left: 40px;
+	margin-left: 0;
 	margin-top: 20px;
 	width: 234px;
 }
@@ -25,15 +32,16 @@
 #seccion1 header .col2 ul.menu li a {
 	color: #525252;
 	font-size: 12px;
+	font-weight: bold;
 }
 #seccion1 header .col2 ul.menu li.active a {
 	color: #DC7243;
 }
 #seccion1 header .col3 {
 	float: left;
-	margin-left: 10px;
+	margin-left: 70px;
 	margin-top: 4px;
-	width: 136px;
+	width: 112px;
 }
 #seccion1 header .col3 ul.menu_topright li {
 	float: left;
@@ -78,7 +86,10 @@
 }
 /*SECCION 2*/
 #seccion2 {
+	/*
 	background: url("../images/bg_seccion1.png") repeat-x scroll 0px 0px transparent;
+	*/
+	padding-top: 140px;	
 }
 #seccion2 .contenedor .wrap_ring {
 	background: url("../images/home/ring/bg_ring.jpg") repeat-x 0 0 transparent;
@@ -121,10 +132,10 @@
 }
 #seccion2 .contenedor .wrap_ring > .col2 .vFlotante a.text_tab {
 	font-size: 27px;
-	margin-left: 12px;
+	margin-left: 20px;
 }
 #seccion2 .contenedor .wrap_ring > .col2 .vFlotante#item1_ring {
-	background-color: #4C8643;
+	background-color: #009142;
 }
 
 #seccion2 .contenedor .wrap_ring > .col2 .vFlotante#item1_ring a {
@@ -228,6 +239,7 @@
 }
 #seccion3 .contenedor #contenido .col1 .boxarticulo > .col2 p {
 	margin-right: 17px;
+	margin-top: -4px;
 	text-align: right;
 }
 #seccion3 .contenedor #contenido .col1 .boxarticulo > .col2 {
@@ -273,17 +285,20 @@
 	color: #FFFFFF;
 }
 #seccion4 .contenedor footer {
+	font-size: 14px;
 	line-height: 28px;
 }
 #seccion4 .contenedor footer .col1 {
 	float: left;
-	padding-left: 42px;
+	padding-left: 15px;
 	width: 438px;
 }
 #seccion4 .contenedor footer .col2 {
 	float: left;
-	padding-left: 108px;
-	width: 362px;
+	padding-left: 210px;
+	width: 279px;
+}
+#seccion4 .contenedor footer .col2 ul#menu_footer {
 }
 #seccion4 .contenedor footer .col2 ul#menu_footer li {
 	float: left;
