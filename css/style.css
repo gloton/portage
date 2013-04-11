@@ -102,10 +102,10 @@
 	float: left;
 }
 #seccion2 .contenedor .wrap_ring > .col1 #anillos {
-	width: 318px;
 	height: 332px;
 	margin-left: 101px;
-	margin-top: 20px;
+	margin-top: 40px;
+	width: 318px;
 }
 #seccion2 .contenedor .wrap_ring > .col2 {
 	background: url("../images/home/ring/bg_tabs_ring.jpg") no-repeat 494px 0px transparent;
@@ -114,11 +114,28 @@
 	overflow: hidden;
 	width: 534px;
 }
+/*
 #seccion2 .contenedor .wrap_ring > .col2 .frase {
 	color: #7C7C7C;
 	width: 236px;
 	font-size: 19px;
 }
+*/
+@font-face {
+font-family: "DINCond-Regular";
+src: url(../media/fonts/DINCond-Regular.otf) format("truetype");
+}
+#seccion2 .contenedor .wrap_ring > .col2 .frase { 
+	color: #7C7C7C;
+	font-family: "DINCond-Regular",sans-serif;
+	font-size: 19px;
+	font-style: italic;
+	position: absolute;
+	top: 390px;
+	width: 240px;
+	
+}
+
 #seccion2 .contenedor .wrap_ring > .col2 .vFlotante {
 	height: 94px;
 	left: 494px;

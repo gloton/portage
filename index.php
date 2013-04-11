@@ -21,7 +21,7 @@
 		Cufon.replace(".vFlotante .titu_menuring",{fontFamily:"DIN Alternate Medium"});
 		Cufon.replace(".vFlotante .subtitu_menuring,#seccion4",{fontFamily:"DIN Alternate Light"});
 		Cufon.replace(".text_tab",{fontFamily:"DINCond-Medium"});
-		Cufon.replace(".frase",{fontFamily:"DINCond-Regular"});
+		//Cufon.replace(".frase",{fontFamily:"DINCond-Regular"});
 	</script>
 	<script type="text/javascript">
 	$(document).ready( function (){
@@ -43,23 +43,23 @@
             switch (id_tab) {
 	            case "item2_ring":
 	            	$("#areasring").attr("src","images/home/ring/anillo-naranjo.png");
-	            	arriba = "-58px";
+	            	arriba = "-74px";
 	            	colorfondo = "#FA653D";
 					break;
 	            case "item3_ring":
 	            	$("#areasring").attr("src","images/home/ring/anillo-amarillo.png");
 	            	colorfondo = "#FCC62B";
-	            	arriba = "-153px";
+	            	arriba = "-158px";
 					break;
 	            case "item4_ring":
 	            	$("#areasring").attr("src","images/home/ring/anillo-todos-colores.png");
 	            	colorfondo = "#57B3D4";
-	            	arriba = "-247px";
+	            	arriba = "-252px";
 					break;
 	            default:
 	            	$("#areasring").attr("src","images/home/ring/anillo-verde.png");
 	            	colorfondo = "#009142";
-	            	arriba = "35px";
+	            	arriba = "30px";
         	}
 
         	//expander pestaña
@@ -92,13 +92,13 @@
 
         //abrir en cada cierto tiempo un tab
 		nro_tab = 1;	
-		$.timer(10000, function(temporizador){
+		$.timer(15000, function(temporizador){
 			   id_item_ring = "#item" + nro_tab + "_ring";
 			   $(id_item_ring).trigger('click' );
 			   nro_tab++;
 			   if (nro_tab == 5) {
 				   nro_tab = 1;
-				   temporizador.reset(10000);
+				   temporizador.reset(15000);
 			   }
 		});  
 
@@ -190,7 +190,7 @@
 		<div class="wrap_ring">
 			<div class="col1">
 				<div id="anillos">
-					<img id="areasring" name="areasring" src="images/home/ring/anillo-verde.png" alt="Anillo"  width="318" height="332" border="0" usemap="#arearingseleccionable">
+					<img id="areasring" name="areasring" src="images/home/ring/anillo-verde.png" alt="Anillo"  width="305" height="281" border="0" usemap="#arearingseleccionable">
 					<map name="arearingseleccionable">
 						<area id="areatab1" shape="poly" coords="163,41,131,28,118,25,104,25,95,25,87,27,75,30,64,35,52,42,44,49,34,58,27,69,21,81,16,96,13,110,13,121,13,143,15,160,17,168,19,178,33,212,49,239,66,259,94,282,123,298,140,303,147,304,174,306,190,302,212,292,222,283,232,272,239,261,246,248,251,235,253,220,254,201,253,186,252,195,249,203,248,211,245,222,238,234,221,252,215,256,205,260,195,264,177,265,170,265,160,262,151,260,141,256,132,252,124,248,117,243,108,235,99,226,90,216,83,206,76,197,70,184,62,169,59,155,57,141,56,129,56,117,56,111,57,98,61,88,62,81,68,71,74,62,82,55,91,47,99,43,110,38,124,36" href="javascript:void(0);" target="_self" alt="tab1" />
 						<area id="areatab2" shape="poly" coords="179,64,158,55,147,53,139,53,129,55,117,59,106,65,96,74,91,81,85,93,82,104,81,112,80,130,81,137,83,147,85,154,89,164,93,174,98,184,104,193,110,201,117,209,129,219,147,229,165,236,193,237,217,224,228,212,235,199,238,189,240,177,239,159,236,177,233,184,230,190,223,198,216,205,204,210,195,212,186,212,175,210,163,206,156,203,147,196,137,188,130,179,124,170,117,158,113,148,110,136,109,124,109,113,110,106,113,95,116,86,122,77,131,69,141,64,149,62,159,61" href="javascript:void(0);" target="_self" alt="tab2" />
@@ -201,7 +201,7 @@
 			</div>
 			<div class="col2">
 				<div class="frase">
-					<p>“Este es un texto cufon que no aparece igual que en photoshop.”
+					<p>"You can only manage what you measure and can only optimise what you control."
 					</p>
 				</div>
 				<ul id="menuring">
@@ -230,6 +230,10 @@
 									<p class="titu_menuring" >PORTAGE PARC</p>
 									<p class="subtitu_menuring">Portage Advanced Regulatory Control</p>
 								</a>
+								<a id="portage_ppc_tab2" href="http://www.kenya.cl" title="PORTAGE PPC" target="_self">
+									<p class="titu_menuring" >PORTAGE PPC</p>
+									<p class="subtitu_menuring">Portage Progressive Control</p>
+								</a>								
 							</li>
 						</ul>						
 					</li>
@@ -245,7 +249,11 @@
 								<a id="portage_aware_insight" href="http://www.google.cl" title="Portage AWARE INSIGHT" target="_self">
 									<p class="titu_menuring" >PORTAGE AWARE INSIGHT</p>
 									<p class="subtitu_menuring">Portage Control Loops Monitoring</p>
-								</a>							
+								</a>
+								<a id="portage_ppc_tab3" href="http://www.kenya.cl" title="PORTAGE PPC" target="_self">
+									<p class="titu_menuring" >PORTAGE PPC</p>
+									<p class="subtitu_menuring">Portage Progressive Control</p>
+								</a>																
 							</li>
 						</ul>							
 					</li>
@@ -257,7 +265,11 @@
 								<a id="portage_ffp" href="http://www.kenya.cl" title="Portage PFC" target="_self">
 									<p class="titu_menuring" >PORTAGE FFP</p>
 									<p class="subtitu_menuring">Portage Fit for Purpose</p>
-								</a>							
+								</a>
+								<a id="portage_ppc_tab4" href="http://www.kenya.cl" title="PORTAGE PPC" target="_self">
+									<p class="titu_menuring" >PORTAGE PPC</p>
+									<p class="subtitu_menuring">Portage Progressive Control</p>
+								</a>																
 							</li>
 						</ul>		
 					</li>
