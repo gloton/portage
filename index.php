@@ -11,6 +11,7 @@
 	<script src="js/fonts/DIN_400-DIN_Alternate_700.font.js" type="text/javascript"></script>
 	<script src="js/fonts/DIN_Alternate_Medium_500.font.js" type="text/javascript"></script>
 	<script src="js/fonts/DINCond-Medium_500.font.js" type="text/javascript"></script>
+	<script src="js/fonts/DINCond-Regular_500.font.js" type="text/javascript"></script>
 	<script src="js/jquery-timer/jquery-timer.js" type="text/javascript"></script>
 	<script type="text/javascript">
 		Cufon.replace(".menu, .menu_topright, #seccion4",{fontFamily:"DIN Alternate","font-weight":700});
@@ -20,6 +21,7 @@
 		Cufon.replace(".vFlotante .titu_menuring",{fontFamily:"DIN Alternate Medium"});
 		Cufon.replace(".vFlotante .subtitu_menuring,#seccion4",{fontFamily:"DIN Alternate Light"});
 		Cufon.replace(".text_tab",{fontFamily:"DINCond-Medium"});
+		Cufon.replace(".frase",{fontFamily:"DINCond-Regular"});
 	</script>
 	<script type="text/javascript">
 	$(document).ready( function (){
@@ -198,6 +200,10 @@
 				</div>
 			</div>
 			<div class="col2">
+				<div class="frase">
+					<p>“Este es un texto cufon que no aparece igual que en photoshop.”
+					</p>
+				</div>
 				<ul id="menuring">
 					<li id="item1_ring" class="vFlotante active parent sl">
 						<a href="#" class="text_tab">Vision Systems</a>

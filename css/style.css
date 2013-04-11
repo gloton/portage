@@ -114,6 +114,11 @@
 	overflow: hidden;
 	width: 534px;
 }
+#seccion2 .contenedor .wrap_ring > .col2 .frase {
+	color: #7C7C7C;
+	width: 236px;
+	font-size: 19px;
+}
 #seccion2 .contenedor .wrap_ring > .col2 .vFlotante {
 	height: 94px;
 	left: 494px;
