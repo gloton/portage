@@ -121,6 +121,22 @@
 	font-size: 19px;
 }
 */
+/*inicio pagina |s*/
+@font-face {
+font-family: "Helvetica Neue";
+src: url(../media/fonts/HelveticaNeue.ttf) format("truetype");
+}
+#seccion2 .contenedor .wrap_ring .col2 #fila1 p.parrafodesc {
+	color: #747474;
+	font-family: "Helvetica Neue",helvetica,sans-serif;
+	font-size: 14px;
+	line-height: 20px;
+	margin: 15px 0;
+	text-align: left;
+	width: 460px;
+}
+/*fin pagina nosotros*/
+
 @font-face {
 font-family: "DINCond-Regular";
 src: url(../media/fonts/DINCond-Regular.otf) format("truetype");
@@ -299,7 +315,16 @@ src: url(../media/fonts/DINCond-Regular.otf) format("truetype");
 #seccion3 .contenedor #contenido > .col2 ul.menu_rightbelow li#item_foro {
 	background: url("../images/home/menu_icono_foro.png") no-repeat 10px 1px transparent;
 }
-
+/*pagina nosotros*/
+#seccion3 .contenedor #contenido #wrap_component_nosotros {
+	font-size: 13px;
+	color: #6eaae2;
+}
+#seccion3 .contenedor #contenido #wrap_component_nosotros .col1 h5 {
+	font-weight: bold;
+}
+#seccion3 .contenedor #contenido #wrap_component_nosotros .col1 p {
+}
 /*SECCION 4*/
 #seccion4 .contenedor {
 	height: 32px;
